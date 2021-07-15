@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ull-v8-eWJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--単語を組み合わせる-->
+        <scene sceneID="ubl-Pn-J8A">
+            <objects>
+                <viewController id="7EK-lZ-0vz" customClass="makeWordViewController" customModule="WordingMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJ4-WU-TRE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dF7-zv-SuS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mph-3K-N9O">
+                                        <rect key="frame" x="20" y="232" width="167" height="302"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-4H-hvn">
+                                                <rect key="frame" x="8" y="8" width="151" height="286"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-j6-0sr">
+                                        <rect key="frame" x="20" y="141" width="167" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="backGround"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="固定する">
+                                            <color key="titleColor" name="Button"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fixLeftPressed:" destination="7EK-lZ-0vz" eventType="touchUpInside" id="ygt-xL-XJO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWj-zy-u64">
+                                        <rect key="frame" x="96" y="592" width="222" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="backGround"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="探す">
+                                            <color key="titleColor" name="Button"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="findPressed:" destination="7EK-lZ-0vz" eventType="touchUpInside" id="mFS-JN-k6V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-5V-PuV">
+                                        <rect key="frame" x="0.0" y="725" width="414" height="88"/>
+                                        <color key="backgroundColor" name="backGround"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="UxJ-tS-k3g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="記録しておく">
+                                            <color key="titleColor" name="Button"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="keepPressed:" destination="7EK-lZ-0vz" eventType="touchUpInside" id="GI7-fd-23b"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zsT-Jn-B4g">
+                                        <rect key="frame" x="227" y="232" width="167" height="302"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfp-pb-UiH">
+                                                <rect key="frame" x="8" y="8" width="151" height="286"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlW-gR-O78">
+                                        <rect key="frame" x="227" y="141" width="167" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="backGround"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="固定する">
+                                            <color key="titleColor" name="Button"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fixRightPressed:" destination="7EK-lZ-0vz" eventType="touchUpInside" id="Y1X-da-IYk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Pdp-IC-WhN"/>
+                                <color key="backgroundColor" name="Button"/>
+                                <constraints>
+                                    <constraint firstItem="QWG-5V-PuV" firstAttribute="leading" secondItem="Pdp-IC-WhN" secondAttribute="leading" id="72Q-2e-Hl0"/>
+                                    <constraint firstAttribute="trailing" secondItem="QWG-5V-PuV" secondAttribute="trailing" id="OfU-m9-2Ip"/>
+                                    <constraint firstItem="QWG-5V-PuV" firstAttribute="bottom" secondItem="Pdp-IC-WhN" secondAttribute="bottom" id="aTW-Ta-TWK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3KV-m9-Wsy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="単語を組み合わせる" image="lightbulb" catalog="system" id="ozt-bT-ufg"/>
+                    <connections>
+                        <outlet property="findButton" destination="xWj-zy-u64" id="702-lD-saw"/>
+                        <outlet property="fixLeftButton" destination="JPh-j6-0sr" id="Hf8-V3-LQM"/>
+                        <outlet property="fixRightButton" destination="AlW-gR-O78" id="YLT-PT-3Mr"/>
+                        <outlet property="leftCard" destination="mph-3K-N9O" id="tYb-Hc-uvy"/>
+                        <outlet property="rightCard" destination="zsT-Jn-B4g" id="9vT-dG-7Kb"/>
+                        <outlet property="textLeft" destination="hPB-4H-hvn" id="qib-L9-pQ7"/>
+                        <outlet property="textRight" destination="xfp-pb-UiH" id="rBm-tl-IiV"/>
+                        <outletCollection property="Views" destination="zsT-Jn-B4g" collectionClass="NSMutableArray" id="j6s-ez-eTg"/>
+                        <outletCollection property="Views" destination="mph-3K-N9O" collectionClass="NSMutableArray" id="BcY-4d-hga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ni-VR-B11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="239.73214285714283"/>
+        </scene>
+        <!--単語を管理する-->
+        <scene sceneID="zbe-Yf-5qn">
+            <objects>
+                <viewController id="NwT-wf-ihY" customClass="generateViewController" customModule="WordingMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6My-FR-hUn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Rz-W3-rkt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="letterTableViewCell" id="IMo-I3-ZjL">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IMo-I3-ZjL" id="tFK-Qk-X68">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Y1-WH-60Z"/>
+                        <color key="backgroundColor" name="Button"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="単語を管理する" image="mail.stack" catalog="system" id="eRd-Gs-62M"/>
+                    <connections>
+                        <outlet property="letterTableView" destination="2Rz-W3-rkt" id="WPr-yk-nzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MW6-i1-53e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662.3188405797105" y="912.72321428571422"/>
+        </scene>
+        <!--過去の閃き-->
+        <scene sceneID="XDE-zK-T2U">
+            <objects>
+                <viewController id="UNv-pi-dIJ" customClass="recordViewController" customModule="WordingMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dnb-7e-kQ8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFG-aM-i8h">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" id="ZdB-tL-w1f">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZdB-tL-w1f" id="xUh-wi-FIL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uGZ-Tu-YjM"/>
+                        <color key="backgroundColor" name="Button"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="過去の閃き" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="o7W-6B-twj">
+                        <color key="badgeColor" systemColor="systemBackgroundColor"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="4s6-M0-IiD"/>
+                    <connections>
+                        <outlet property="tableView" destination="uFG-aM-i8h" id="dps-of-4XT"/>
+                        <segue destination="FXu-6F-DN5" kind="show" identifier="goToEdit" id="DHN-WI-1pu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnn-vW-lul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2664" y="-475"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="yet-lW-J5g">
+            <objects>
+                <viewController id="FXu-6F-DN5" customClass="editViewController" customModule="WordingMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlx-NK-zyz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="組み合わせから考えたアイデアを記述してみてください！" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kOB-Vp-O3x">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Ts-Zq-ABY"/>
+                        <color key="backgroundColor" name="Button"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cxg-BU-87r"/>
+                    <connections>
+                        <outlet property="editTextField" destination="kOB-Vp-O3x" id="54a-xR-CpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zu5-Nb-sjM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3515.9420289855075" y="-475.44642857142856"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="8uA-Dr-e7p">
+            <objects>
+                <viewController id="7KV-qZ-wRG" customClass="startViewController" customModule="WordingMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yl3-FZ-Lnh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NHe-Qs-krh"/>
+                        <color key="backgroundColor" name="Button"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CR8-mk-hww"/>
+                    <connections>
+                        <segue destination="tnO-O1-d9Y" kind="show" identifier="goToMain" id="djT-Av-hPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3J-ES-IAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.52173913043487" y="207.58928571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="df5-V6-nag">
+            <objects>
+                <tabBarController id="tnO-O1-d9Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NO0-P7-dhH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MSJ-V2-64h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UNv-pi-dIJ" kind="relationship" relationship="viewControllers" id="3sE-7h-OO0"/>
+                        <segue destination="7EK-lZ-0vz" kind="relationship" relationship="viewControllers" id="Dc8-ts-OeQ"/>
+                        <segue destination="NwT-wf-ihY" kind="relationship" relationship="viewControllers" id="b6D-2n-a3X"/>
+                    </connections>
+                </tabBarController>
+                <view contentMode="scaleToFill" id="Nuj-RW-wCj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WordingMaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-sE-Men">
+                            <rect key="frame" x="20" y="143" width="374" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                            <color key="textColor" name="backGround"/>
+                            <color key="highlightedColor" name="backGround"/>
+                            <color key="shadowColor" systemColor="labelColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUY-NW-ZNd">
+                            <rect key="frame" x="107" y="764" width="200" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="backGround"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <state key="normal" title="組み合わせる">
+                                <color key="titleColor" name="Button"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dO-Dc-HCC">
+                            <rect key="frame" x="107" y="661" width="200" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="backGround"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <state key="normal" title="過去の閃き">
+                                <color key="titleColor" name="Button"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="単語カードを組み合わせることで、アイデアのヒントを探します。　　　　　　　　　　　　　「組み合わせる」ボタンから始めましょう！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6of-8L-AgM">
+                            <rect key="frame" x="36" y="342" width="343" height="132"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" name="backGround"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" name="backGround"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="50w-9m-aUR"/>
+                    <color key="backgroundColor" name="Button"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izq-n2-Aqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.9275362318842" y="207.58928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zVP-35-auw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ull-v8-eWJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="raI-R0-6s3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7KV-qZ-wRG" kind="relationship" relationship="rootViewController" id="UTX-Mz-RcH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HN2-gK-2Is" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.17391304347828" y="207.58928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
+        <image name="mail.stack" catalog="system" width="128" height="122"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <namedColor name="Button">
+            <color red="0.9100000262260437" green="0.9649999737739563" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backGround">
+            <color red="0.29800000786781311" green="0.29800000786781311" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
