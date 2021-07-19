@@ -34,6 +34,7 @@
 		D67A9DAF2696CD9C0053BF1C /* editViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editViewController.swift; sourceTree = "<group>"; };
 		D67A9DB1269BC51E0053BF1C /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		D67A9DB3269BE6FA0053BF1C /* generateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateViewController.swift; sourceTree = "<group>"; };
+		D67A9DB7269FDA110053BF1C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 				D67A9D9B26957CF30053BF1C /* Assets.xcassets */,
 				D67A9D9D26957CF30053BF1C /* LaunchScreen.storyboard */,
 				D67A9DA026957CF30053BF1C /* Info.plist */,
+				D67A9DB7269FDA110053BF1C /* README.md */,
 			);
 			path = WordingMaker;
 			sourceTree = "<group>";
