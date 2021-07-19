@@ -2,7 +2,7 @@ import UIKit
 
 class generateViewController: UIViewController {
     @IBOutlet weak var letterTableView: UITableView!
-    // UIAlertのボタン
+    var isOk = true
     var textField = UITextField()
     var addButtonItem: UIBarButtonItem!
     var deleteButtonItem: UIBarButtonItem!
@@ -33,14 +33,37 @@ class generateViewController: UIViewController {
     @objc func addButtonPressed(_ sender: UIBarButtonItem) {
         let addAlert = UIAlertController(title: "単語を追加", message: "追加する単語を入力してください", preferredStyle: .alert)
         let addAction = UIAlertAction(title: "追加する", style: UIAlertAction.Style.default) { (action: UIAlertAction) -> Void in
-            if self.textField.text != "" {
+            for element in word {
+                if self.textField.text == element.word {
+                    self.isOk = false
+                }
+            }
+            if self.textField.text != "" && self.isOk {
                 word.append(wordData(word: self.textField.text!))
+            } else if self.textField.text == "" {
+                let emptyAlert = UIAlertController(title: "何も入力されていません", message: "空白は追加できません", preferredStyle: .alert)
+                let emptyAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+                    (action: UIAlertAction!) -> Void in
+                })
+                emptyAlert.addAction(emptyAction)
+                self.present(emptyAlert, animated: true, completion: nil)
+            } else if self.isOk == false {
+                let duplicateAlert = UIAlertController(title: "すでに入力されています", message: "重複した単語は追加できません", preferredStyle: .alert)
+                let duplicateAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+                    (action: UIAlertAction!) -> Void in
+                })
+                duplicateAlert.addAction(duplicateAction)
+                self.present(duplicateAlert, animated: true, completion: nil)
             }
             self.letterTableView.reloadData()
         }
+        let cancelAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.default) { (action: UIAlertAction) -> Void in
+            }
+        
         addAlert.addTextField { (alertTextField) in
             self.textField = alertTextField
         }
+        addAlert.addAction(cancelAction)
         addAlert.addAction(addAction)
         present(addAlert, animated: true, completion: nil)
     }

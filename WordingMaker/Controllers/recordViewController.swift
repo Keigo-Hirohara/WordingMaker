@@ -25,6 +25,11 @@ class recordViewController: UIViewController {
         self.tableView.reloadData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        deleteAllButtonItem.isEnabled = false
+        deleteAllButtonItem.tintColor = UIColor.clear
+    }
+    
     // 全て削除ボタンが押された時の処理
     @objc func deleteAllButtonPressed(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "全ての単語を削除しますか？", message: "復旧はできません", preferredStyle: .alert)

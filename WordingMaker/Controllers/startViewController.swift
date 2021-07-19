@@ -12,7 +12,7 @@ class startViewController: UIViewController {
     // ロゴのアニメーションを作成
     override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 0.3,
-                       delay: 1.0,
+                       delay: 1.8,
                        options: UIView.AnimationOptions.curveEaseOut,
                        animations: { () in
                         self.imageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
@@ -20,7 +20,7 @@ class startViewController: UIViewController {
                         
                        })
         UIView.animate(withDuration: 0.2,
-                       delay: 1.5,
+                       delay: 2.0,
                        options: UIView.AnimationOptions.curveEaseOut,
                        animations: { () in
                         self.imageView.transform = CGAffineTransform(scaleX: 8.0, y: 8.0)
@@ -36,7 +36,7 @@ class startViewController: UIViewController {
         self.imageView.center = self.view.center
         self.imageView.image = UIImage(named: "launchIcon")
         self.view.addSubview(self.imageView)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
             self.performSegue(withIdentifier: "goToMain", sender: nil)
         }
     }
