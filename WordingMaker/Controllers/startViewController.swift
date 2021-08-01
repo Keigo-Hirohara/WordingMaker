@@ -11,7 +11,7 @@ class startViewController: UIViewController {
     
     // ロゴのアニメーションを作成
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.3,
+        UIView.animate(withDuration: 0.1,
                        delay: 1.8,
                        options: UIView.AnimationOptions.curveEaseOut,
                        animations: { () in

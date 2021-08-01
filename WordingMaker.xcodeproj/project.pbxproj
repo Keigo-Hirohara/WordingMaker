@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C39D565B4445EE4BBD6B9C6E /* Pods_WordingMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39694B7C0357F6484677D9C2 /* Pods_WordingMaker.framework */; };
+		D610E37226B65EEF0022D74F /* genreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610E37126B65EEF0022D74F /* genreData.swift */; };
+		D610E37426B670ED0022D74F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610E37326B670ED0022D74F /* Model.swift */; };
+		D62A5AE626AB9CC300717DFD /* showGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A5AE526AB9CC300717DFD /* showGenreViewController.swift */; };
+		D63C26CC26A78C370088BEE3 /* addGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C26CB26A78C370088BEE3 /* addGenreViewController.swift */; };
 		D67A9D9326957CF20053BF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A9D9226957CF20053BF1C /* AppDelegate.swift */; };
 		D67A9D9526957CF20053BF1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A9D9426957CF20053BF1C /* SceneDelegate.swift */; };
 		D67A9D9A26957CF20053BF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67A9D9826957CF20053BF1C /* Main.storyboard */; };
@@ -21,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36126BB76A27281203620AC2 /* Pods-WordingMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordingMaker.debug.xcconfig"; path = "Target Support Files/Pods-WordingMaker/Pods-WordingMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		39694B7C0357F6484677D9C2 /* Pods_WordingMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordingMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9E6A43CA6B18B861F51A9F /* Pods-WordingMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordingMaker.release.xcconfig"; path = "Target Support Files/Pods-WordingMaker/Pods-WordingMaker.release.xcconfig"; sourceTree = "<group>"; };
+		D610E37126B65EEF0022D74F /* genreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genreData.swift; sourceTree = "<group>"; };
+		D610E37326B670ED0022D74F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D62A5AE526AB9CC300717DFD /* showGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showGenreViewController.swift; sourceTree = "<group>"; };
+		D63C26CB26A78C370088BEE3 /* addGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGenreViewController.swift; sourceTree = "<group>"; };
 		D67A9D8F26957CF20053BF1C /* WordingMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordingMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67A9D9226957CF20053BF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67A9D9426957CF20053BF1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39D565B4445EE4BBD6B9C6E /* Pods_WordingMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5742B3F14AED442EE1066452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36126BB76A27281203620AC2 /* Pods-WordingMaker.debug.xcconfig */,
+				5E9E6A43CA6B18B861F51A9F /* Pods-WordingMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4637CE1367E33986095A5D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39694B7C0357F6484677D9C2 /* Pods_WordingMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D67A9D8626957CF20053BF1C = {
 			isa = PBXGroup;
 			children = (
 				D67A9D9126957CF20053BF1C /* WordingMaker */,
 				D67A9D9026957CF20053BF1C /* Products */,
+				5742B3F14AED442EE1066452 /* Pods */,
+				A4637CE1367E33986095A5D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				D67A9DAD2695D74D0053BF1C /* Data.swift */,
+				D610E37126B65EEF0022D74F /* genreData.swift */,
+				D610E37326B670ED0022D74F /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +138,8 @@
 				D67A9DAF2696CD9C0053BF1C /* editViewController.swift */,
 				D67A9DA82695951B0053BF1C /* makeWordViewController.swift */,
 				D67A9DB3269BE6FA0053BF1C /* generateViewController.swift */,
+				D63C26CB26A78C370088BEE3 /* addGenreViewController.swift */,
+				D62A5AE526AB9CC300717DFD /* showGenreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67A9DA326957CF30053BF1C /* Build configuration list for PBXNativeTarget "WordingMaker" */;
 			buildPhases = (
+				BAD7B42EC29933C198F48E85 /* [CP] Check Pods Manifest.lock */,
 				D67A9D8B26957CF20053BF1C /* Sources */,
 				D67A9D8C26957CF20053BF1C /* Frameworks */,
 				D67A9D8D26957CF20053BF1C /* Resources */,
+				F9CF613ABDE30A5374B4F669 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +211,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BAD7B42EC29933C198F48E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordingMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CF613ABDE30A5374B4F669 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordingMaker/Pods-WordingMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordingMaker/Pods-WordingMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordingMaker/Pods-WordingMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D67A9D8B26957CF20053BF1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,9 +260,13 @@
 			files = (
 				D67A9D9326957CF20053BF1C /* AppDelegate.swift in Sources */,
 				D67A9DB4269BE6FA0053BF1C /* generateViewController.swift in Sources */,
+				D63C26CC26A78C370088BEE3 /* addGenreViewController.swift in Sources */,
+				D610E37426B670ED0022D74F /* Model.swift in Sources */,
 				D67A9DB2269BC51E0053BF1C /* startViewController.swift in Sources */,
+				D610E37226B65EEF0022D74F /* genreData.swift in Sources */,
 				D67A9DAE2695D74D0053BF1C /* Data.swift in Sources */,
 				D67A9DA92695951B0053BF1C /* makeWordViewController.swift in Sources */,
+				D62A5AE626AB9CC300717DFD /* showGenreViewController.swift in Sources */,
 				D67A9D9526957CF20053BF1C /* SceneDelegate.swift in Sources */,
 				D67A9DB02696CD9C0053BF1C /* editViewController.swift in Sources */,
 				D67A9DA7269594F70053BF1C /* recordViewController.swift in Sources */,
@@ -329,6 +413,7 @@
 		};
 		D67A9DA426957CF30053BF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36126BB76A27281203620AC2 /* Pods-WordingMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +433,7 @@
 		};
 		D67A9DA526957CF30053BF1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9E6A43CA6B18B861F51A9F /* Pods-WordingMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
