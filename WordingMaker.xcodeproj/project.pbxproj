@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C39D565B4445EE4BBD6B9C6E /* Pods_WordingMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39694B7C0357F6484677D9C2 /* Pods_WordingMaker.framework */; };
 		D610E37226B65EEF0022D74F /* genreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610E37126B65EEF0022D74F /* genreData.swift */; };
-		D610E37426B670ED0022D74F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610E37326B670ED0022D74F /* Model.swift */; };
 		D62A5AE626AB9CC300717DFD /* showGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A5AE526AB9CC300717DFD /* showGenreViewController.swift */; };
 		D63C26CC26A78C370088BEE3 /* addGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C26CB26A78C370088BEE3 /* addGenreViewController.swift */; };
 		D67A9D9326957CF20053BF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A9D9226957CF20053BF1C /* AppDelegate.swift */; };
@@ -30,7 +29,6 @@
 		39694B7C0357F6484677D9C2 /* Pods_WordingMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordingMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9E6A43CA6B18B861F51A9F /* Pods-WordingMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordingMaker.release.xcconfig"; path = "Target Support Files/Pods-WordingMaker/Pods-WordingMaker.release.xcconfig"; sourceTree = "<group>"; };
 		D610E37126B65EEF0022D74F /* genreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genreData.swift; sourceTree = "<group>"; };
-		D610E37326B670ED0022D74F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D62A5AE526AB9CC300717DFD /* showGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showGenreViewController.swift; sourceTree = "<group>"; };
 		D63C26CB26A78C370088BEE3 /* addGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGenreViewController.swift; sourceTree = "<group>"; };
 		D67A9D8F26957CF20053BF1C /* WordingMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordingMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +115,6 @@
 			children = (
 				D67A9DAD2695D74D0053BF1C /* Data.swift */,
 				D610E37126B65EEF0022D74F /* genreData.swift */,
-				D610E37326B670ED0022D74F /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,7 +258,6 @@
 				D67A9D9326957CF20053BF1C /* AppDelegate.swift in Sources */,
 				D67A9DB4269BE6FA0053BF1C /* generateViewController.swift in Sources */,
 				D63C26CC26A78C370088BEE3 /* addGenreViewController.swift in Sources */,
-				D610E37426B670ED0022D74F /* Model.swift in Sources */,
 				D67A9DB2269BC51E0053BF1C /* startViewController.swift in Sources */,
 				D610E37226B65EEF0022D74F /* genreData.swift in Sources */,
 				D67A9DAE2695D74D0053BF1C /* Data.swift in Sources */,
